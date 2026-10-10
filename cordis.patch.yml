@@ -1,0 +1,8 @@
+# The frame's right icon rail. A deployment whose ui-layout predates the
+# `rightrail` slot renders no rail at all, so its in-box row is disabled and this
+# build (which declares the slot) takes its place. Nothing else changes.
+- insert:
+    - id: layout-rail
+      name: '@deepseek-ai/dsh-layout-rail'
+- id: ui-layout
+  disabled: true
