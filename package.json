@@ -1,20 +1,32 @@
 {
   "name": "@deepseek-ai/dsh-layout-rail",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The frame's right icon rail for the DeepSeek Harness Web/Desktop client, for installations whose ui-layout predates it.",
   "license": "MIT",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
-    ".": { "default": "./lib/index.js" },
-    "./client": { "default": "./lib/client.js" },
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
     "./package.json": "./package.json"
   },
   "dsh": {
-    "bundle": { "patch": "./cordis.patch.yml" },
-    "client": { "platform": "web" }
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
   },
-  "files": ["lib/index.js", "lib/client.js", "cordis.patch.yml"],
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml"
+  ],
   "peerDependencies": {
     "@deepseek-ai/cordis": "*",
     "@deepseek-ai/dsh-client-locale": "*",
